@@ -10,6 +10,8 @@ Le service data a identifié deux axes d'améliorations pour l'application:
 
 L'amélioration fonctionnelle peut être de plusieurs ordres. L'objectif est d'améliorer l'expérience utilisateur et de lui donner envie de réaliser un prêt auprès de votre banque. Soyez créatif mais respectez les deadlines: vous n'avez que deux semaines pour réaliser ce projet et d'autres missions pourraient s'intercaler à l'improviste. 
 
+Description de la base de données utilisées: [Ames Housing](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt)
+
 ## Rappel consignes certification E2:
 
 A partir d’un projet existant, le/la candidat(e) doit :
@@ -39,7 +41,7 @@ Améliorer l’application d’intelligence artificielle en développant une év
 
 ## Instructions
 
-Pour lancer le projet vous devez cloner le projet et installer les requiements:
+Pour lancer le projet vous devez forker le projet et installer les requiements:
 - **pip install -r requirements.txt**
 
 Puis lancer l'application en locale:
