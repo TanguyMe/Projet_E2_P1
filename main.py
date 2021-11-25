@@ -37,6 +37,7 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
+
 df = user_input_features()
 
 # Main Panel
@@ -48,10 +49,12 @@ st.write('---')
 
 
 # Apply Model to Make Prediction
-loaded_model = pickle.load(open("finalized_model.sav", 'rb'))
-prediction = loaded_model.predict(df)
+def predict(data):
+    loaded_model = pickle.load(open("finalized_model.sav", 'rb'))
+    prediction = loaded_model.predict(data)
+    return '${:,}'.format(int(prediction))
 
-formated_prediction = '${:,}'.format(int(prediction))
+
 st.header('Prediction du prix de vente')
-st.write(formated_prediction)
+st.write(predict(df))
 st.write('---')
