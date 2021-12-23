@@ -15,10 +15,6 @@ def test_number_features():
 
 
 def test_prediction_format():
-    assert re.match(predict(X.sample()), float)
+    assert re.match(r"(?:[$]\d+,\d{3})", predict(X.sample()))
 
 
-prediction = 150500.05555
-formated_pred = '${:,}'.format(int(prediction))
-print(formated_pred)
-print(re.match(formated_pred, r"(?:[$]\d+,\d{3})"))
